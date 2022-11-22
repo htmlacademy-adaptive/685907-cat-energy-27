@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Иван Носков](https://up.htmlacademy.ru/adaptive/27/user/685907).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol-fw).
 
 ---
 
