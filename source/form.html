@@ -6,17 +6,17 @@
 </head>
 <body class="page__body">
 <header class="inner-header">
-  <div class="header-wrapper">
+  <div class="inner-header__wrapper">
     <a href="#" class="inner-header__logo">
       <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
     </a>
     <a href="#" class="inner-header__logo-title logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
     </a>
+    <button class="inner-header__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <nav class="inner-nav">
-      <button class="inner-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="inner-nav__wrapper">
         <ul class="inner-nav__list">
           <li class="inner-nav__item inner-nav__item--active">
@@ -41,12 +41,12 @@
 </header>
 <main class="inner-main">
   <div class="inner-main__wrapper">
-    <h1 class="inner-main__title visually-hidden">Страница подбора программы питания для вашего кота.</h1>
     <form action="https://echo.htmlacademy.ru/" method="GET" class="form">
-      <h2 class="form__title">Подбор программы</h2>
+      <h1 class="form__title">Подбор программы</h1>
       <span class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
       <fieldset class="form__data cat-data">
-        <label for="name" class="cat-data__input-label">ИМЯ:*</label>
+        <legend class="cat-data__title visually-hidden">Данные о коте</legend>
+        <label for="name" class="cat-data__input-label">Имя:*</label>
         <input type="text" id="name" class="cat-data__input" value="БАРСИК" name="cat-name" required>
         <label for="weight" class="cat-data__input-label">Вес (кг):*</label>
         <input type="text" id="weight" class="cat-data__input" value="7" name="cat-weight" required>
@@ -54,6 +54,7 @@
         <input type="text" id="age" class="cat-data__input" value="7" name="cat-age">
       </fieldset>
       <fieldset class="form__data cat-mission">
+        <legend class="cat-mission__title visually-hidden">Цель</legend>
         <label class="cat-mission__control">
           <input class="cat-mission__control-input" type="radio" name="cat-mission" value="weight-loss" checked>
           <span class="cat-mission__control-label">похудение</span>
@@ -68,7 +69,7 @@
         </label>
       </fieldset>
       <fieldset class="form__data contact-details">
-        <h2 class="contact-details__title">Контактные данные (владельца кота)</h2>
+        <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
         <label class="contact-details__data">
           <span class="contact-details__label">E-mail:*</span>
           <input class="contact-details__input" type="text" value="kuklachev@gmail.com" name="email" required>
@@ -79,13 +80,13 @@
         </label>
       </fieldset>
       <fieldset class="form__data comment">
-        <h2 class="comment__title">Комментарий</h2>
+        <legend class="comment__title">Комментарий</legend>
         <label class="comment__data">
-          <input class="comment__input" type="text" placeholder="Расскажите обо всех повАдках кота" value="" name="comment">
+          <textarea class="comment__input" rows="10" cols="30" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
       <fieldset class="form__data additional-info">
-        <h2 class="additional-info__title">Дополнительно</h2>
+        <legend class="additional-info__title">Дополнительно</legend>
         <label class="additional-info__data">
           <input class="additional-info__input" type="checkbox" name="additional-info__sweetener" checked>
           <span class="additional-info__label">сахарозаменитель</span>
@@ -115,7 +116,7 @@
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       <div class="contacts__map"></div>
     </div>
-    <a href="#" class="main-inner-footer__logo-title logo-title">
+    <a href="#" class="main-inner-footer__logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
     </a>
     <div class="main-inner-footer-social social">

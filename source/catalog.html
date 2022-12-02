@@ -6,17 +6,17 @@
 </head>
 <body class="page__body">
 <header class="inner-header">
-  <div class="header-wrapper">
+  <div class="inner-header__wrapper">
     <a href="#" class="inner-header__logo">
       <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
     </a>
     <a href="#" class="inner-header__logo-title logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
     </a>
+    <button class="inner-header__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <nav class="inner-nav">
-      <button class="inner-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="inner-nav__wrapper">
         <ul class="inner-nav__list">
           <li class="inner-nav__item inner-nav__item--active">
@@ -40,156 +40,99 @@
   </div>
 </header>
 <main class="inner-main">
-  <h1 class="visually-hidden">Все товары магазина Cat Energy</h1>
   <section class="catalog">
-    <h2 class="catalog__title">Каталог продукции</h2>
+    <h1 class="catalog__title">Каталог продукции</h1>
     <ul class="catalog__list">
       <li class="product-card">
         <img class="product-card__image" src="img/products/product-1_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
-        <span class="product-card__title">Cat Energy PRO 500 г</span>
-        <table class="product-card__info-table">
-          <tbody>
-          <tr>
-            <td>Масса</td>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Курица</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>700 ₽</td>
-          </tr>
-          </tbody>
-        </table>
-        <button class="product-card__button-order">ЗАКАЗАТЬ</button>
+        <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
+        <dl class="product-card__info-description">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Курица</dd>
+          <dt>Цена</dt>
+          <dd>700 ₽</dd>
+        </dl>
+        <a href="form.html" class="product-card__button-order">заказать</a>
       </li>
       <li class="product-card">
         <img class="product-card__image" src="img/products/product-1_big.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
-        <span class="product-card__title">Cat Energy PRO 1000 г</span>
-        <table class="product-card__info-table">
-          <tbody>
-          <tr>
-            <td>Масса</td>
-            <td>1000 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Курица</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>1000 ₽</td>
-          </tr>
-          </tbody>
-        </table>
-        <button class="product-card__button-order">ЗАКАЗАТЬ</button>
+        <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
+        <dl class="product-card__info-description">
+          <dt>Масса</dt>
+          <dd>1000 г</dd>
+          <dt>Вкус</dt>
+          <dd>Курица</dd>
+          <dt>Цена</dt>
+          <dd>1000 ₽</dd>
+        </dl>
+        <a href="form.html" class="product-card__button-order">заказать</a>
       </li>
       <li class="product-card">
         <img class="product-card__image" src="img/products/product-2_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
-        <span class="product-card__title">Cat Energy PRO 500 г</span>
-        <table class="product-card__info-table">
-          <tbody>
-          <tr>
-            <td>Масса</td>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Рыба</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>700 ₽</td>
-          </tr>
-          </tbody>
-        </table>
-        <button class="product-card__button-order">ЗАКАЗАТЬ</button>
+        <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
+        <dl class="product-card__info-description">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Рыба</dd>
+          <dt>Цена</dt>
+          <dd>700 ₽</dd>
+        </dl>
+        <a href="form.html" class="product-card__button-order">заказать</a>
       </li>
       <li class="product-card">
         <img class="product-card__image" src="img/products/product-2_big.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
-        <span class="product-card__title">Cat Energy PRO 1000 г</span>
-        <table class="product-card__info-table">
-          <tbody>
-          <tr>
-            <td>Масса</td>
-            <td>1000 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Рыба</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>1000 ₽</td>
-          </tr>
-          </tbody>
-        </table>
-        <button class="product-card__button-order">ЗАКАЗАТЬ</button>
+        <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
+        <dl class="product-card__info-description">
+          <dt>Масса</dt>
+          <dd>1000 г</dd>
+          <dt>Вкус</dt>
+          <dd>Рыба</dd>
+          <dt>Цена</dt>
+          <dd>1000 ₽</dd>
+        </dl>
+        <a href="form.html" class="product-card__button-order">заказать</a>
       </li>
       <li class="product-card">
         <img class="product-card__image" src="img/products/product-3_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
-        <span class="product-card__title">Cat Energy SLIM 500 г</span>
-        <table class="product-card__info-table">
-          <tbody>
-          <tr>
-            <td>Масса</td>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Гречка</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>400 ₽</td>
-          </tr>
-          </tbody>
-        </table>
-        <button class="product-card__button-order">ЗАКАЗАТЬ</button>
+        <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
+        <dl class="product-card__info-description">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Гречка</dd>
+          <dt>Цена</dt>
+          <dd>400 ₽</dd>
+        </dl>
+        <a href="form.html" class="product-card__button-order">заказать</a>
       </li>
       <li class="product-card">
         <img class="product-card__image" src="img/products/product-3_big.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
-        <span class="product-card__title">Cat Energy SLIM 1000 г</span>
-        <table class="product-card__info-table">
-          <tbody>
-          <tr>
-            <td>Масса</td>
-            <td>1000 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Гречка</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>700 ₽</td>
-          </tr>
-          </tbody>
-        </table>
-        <button class="product-card__button-order">ЗАКАЗАТЬ</button>
+        <h2 class="product-card__title">Cat Energy SLIM 1000 г</h2>
+        <dl class="product-card__info-description">
+          <dt>Масса</dt>
+          <dd>1000 г</dd>
+          <dt>Вкус</dt>
+          <dd>Гречка</dd>
+          <dt>Цена</dt>
+          <dd>700 ₽</dd>
+        </dl>
+        <a href="form.html" class="product-card__button-order">заказать</a>
       </li>
       <li class="product-card">
         <img class="product-card__image" src="img/products/product-4_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
-        <span class="product-card__title">Cat Energy SLIM 500 г</span>
-        <table class="product-card__info-table">
-          <tbody>
-          <tr>
-            <td>Масса</td>
-            <td>500 г</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Рис</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>500 ₽</td>
-          </tr>
-          </tbody>
-        </table>
-        <button class="product-card__button-order">ЗАКАЗАТЬ</button>
+        <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
+        <dl class="product-card__info-description">
+          <dt>Масса</dt>
+          <dd>500 г</dd>
+          <dt>Вкус</dt>
+          <dd>Рис</dd>
+          <dt>Цена</dt>
+          <dd>500 ₽</dd>
+        </dl>
+        <a href="form.html" class="product-card__button-order">заказать</a>
       </li>
     </ul>
     <div class="show-more">
@@ -206,31 +149,31 @@
         <span class="additional-card__title">Сахарозаменитель</span>
         <span class="additional-card__product-info">1 упаковка (100 г)</span>
         <span class="additional-card__product-price">200 ₽</span>
-        <button type="button" class="additional-card__button">ЗАКАЗАТЬ</button>
+        <button type="button" class="additional-card__button">заказать</button>
       </li>
       <li class="additional-card">
         <span class="additional-card__title">питьевая вода</span>
         <span class="additional-card__product-info">5 литров</span>
         <span class="additional-card__product-price">50 ₽</span>
-        <button type="button" class="additional-card__button">ЗАКАЗАТЬ</button>
+        <button type="button" class="additional-card__button">заказать</button>
       </li>
       <li class="additional-card">
         <span class="additional-card__title">молоко</span>
         <span class="additional-card__product-info">1 литр</span>
         <span class="additional-card__product-price">100 ₽</span>
-        <button type="button" class="additional-card__button">ЗАКАЗАТЬ</button>
+        <button type="button" class="additional-card__button">заказать</button>
       </li>
       <li class="additional-card">
         <span class="additional-card__title">витамины</span>
         <span class="additional-card__product-info">1 упаковка (30 г)</span>
         <span class="additional-card__product-price">300 ₽</span>
-        <button type="button" class="additional-card__button">ЗАКАЗАТЬ</button>
+        <button type="button" class="additional-card__button">заказать</button>
       </li>
     </ul>
-    <div class="additional-catalog__promo">
+    <a href="form.html" class="additional-catalog__promo">
       <span class="additional-catalog__promo-icon"></span>
       <span class="additional-catalog__promo-text">Закажите все и получите чехол для кота в подарок!</span>
-    </div>
+    </a>
   </section>
 </main>
 <footer class="main-inner-footer">
@@ -240,7 +183,7 @@
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       <div class="contacts__map"></div>
     </div>
-    <a href="#" class="main-inner-footer__logo-title logo-title">
+    <a href="#" class="main-inner-footer__logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
     </a>
     <div class="main-inner-footer-social social">
