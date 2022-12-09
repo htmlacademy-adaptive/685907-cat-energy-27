@@ -1,1 +1,87 @@
-// Начните писать стили здесь
+@import "header/main-nav";
+@import "header/main-header";
+@import "header/inner-header";
+@import "header/inner-nav";
+@import "promo";
+@import "program";
+@import "advantages";
+@import "show-more";
+@import "inner-main";
+@import "form/form";
+@import "form/cat-data";
+@import "form/cat-mission";
+@import "form/contact-details";
+@import "form/comment";
+@import "form/additional-info";
+@import "catalog/catalog";
+@import "catalog/product-card";
+@import "catalog/info-description";
+@import "catalog/additional-catalog";
+@import "catalog/catalog-promo";
+@import "life-example/life-example";
+@import "life-example/results";
+@import "footer/main-footer";
+@import "footer/main-inner-footer";
+@import "footer/contacts";
+@import "footer/inner-contacts";
+@import "footer/footer-map";
+@import "footer/social";
+@import "footer/logo-title";
+@import "footer/copyright";
+@import "buttons";
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 320px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
