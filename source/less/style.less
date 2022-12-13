@@ -1,6 +1,5 @@
 @import "header/main-nav";
 @import "header/main-header";
-@import "header/inner-header";
 @import "header/inner-nav";
 @import "promo";
 @import "program";
@@ -21,12 +20,8 @@
 @import "life-example/life-example";
 @import "life-example/results";
 @import "footer/main-footer";
-@import "footer/main-inner-footer";
 @import "footer/contacts";
-@import "footer/inner-contacts";
-@import "footer/footer-map";
 @import "footer/social";
-@import "footer/logo-title";
 @import "footer/copyright";
 @import "buttons";
 
@@ -65,14 +60,20 @@ body {
   min-height: 100%;
   min-width: 320px;
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: (18 / 14);
   background-color: #ffffff;
+  color: #444444;
 }
 
 main {
   flex-grow: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {

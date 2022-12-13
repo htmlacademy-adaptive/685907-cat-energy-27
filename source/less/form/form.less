@@ -10,7 +10,12 @@
 .form__title {
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
+  color: #000000;
+}
+
+.form__text {
+  color: #000000;
 }
 
 .form__text-wrapper {
@@ -25,7 +30,7 @@
 .form__button-submit {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: (20 / 16);
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
@@ -41,8 +46,9 @@
 .form__legend {
   display: block;
   font-family: "Lato", sans-serif;
-  line-height: 16px;
+  line-height: (16 / 14);
   text-align: center;
+  color: #000000;
 }
 
 .form__legend-wrapper {
