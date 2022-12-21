@@ -14,5 +14,23 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
-  color: #000000;
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-main {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-main {
+    width: 1220px;
+  }
+
+  .inner-main__container {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    justify-content: space-between;
+  }
 }

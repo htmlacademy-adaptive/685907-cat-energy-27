@@ -13,7 +13,7 @@
 }
 
 .promo__title {
-  color: #ffffff;
+  color: @white;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
@@ -23,7 +23,7 @@
 }
 
 .promo__slogan {
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1;
@@ -33,4 +33,44 @@
 
 .promo__choose-program {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: none;
+  }
+
+  .promo__wrapper {
+    background-color: transparent;
+    width: 708px;
+  }
+
+  .promo__title {
+    color: @black;
+  }
+
+  .promo__slogan {
+    color: @black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .promo__title {
+    grid-column: 1/2;
+  }
+
+  .promo__slogan {
+    grid-column: 1/2;
+  }
+
+  .promo__image {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }

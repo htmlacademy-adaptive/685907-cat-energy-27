@@ -10,11 +10,11 @@
 .form__title {
   font-size: 36px;
   line-height: 1;
-  color: #000000;
+  color: @black;
 }
 
 .form__text {
-  color: #000000;
+  color: @black;
 }
 
 .form__text-wrapper {
@@ -41,9 +41,39 @@
   font-family: "Lato", sans-serif;
   line-height: (16 / 14);
   text-align: center;
-  color: #000000;
+  color: @black;
 }
 
 .form__legend-wrapper {
   margin-bottom: 32px;
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 708px;
+  }
+
+  .form__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    width: 1220px;
+  }
+
+  .form__data {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

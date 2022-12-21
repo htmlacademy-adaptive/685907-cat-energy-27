@@ -27,5 +27,33 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: (20 / 16);
-  color: #ffffff;
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-catalog__promo {
+    width: 708px;
+  }
+
+  .additional-catalog__promo-wrapper {
+    min-height: 200px;
+  }
+
+  .additional-catalog__promo-image {
+    background-size: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-catalog__promo {
+    width: 245px;
+  }
+
+  .additional-catalog__promo-wrapper {
+    min-height: 290px;
+  }
+
+  .additional-catalog__promo-image {
+    background-size: 280px 290px;
+  }
 }

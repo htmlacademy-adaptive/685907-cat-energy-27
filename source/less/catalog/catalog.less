@@ -9,3 +9,27 @@
   align-items: center;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    width: 708px;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    width: 1220px;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -24,6 +24,22 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: #000000;
+  color: @black;
   padding: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 440px;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 478px;
+  }
 }

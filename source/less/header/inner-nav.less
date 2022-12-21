@@ -28,5 +28,19 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: #000000;
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-nav {
+    display: block;
+  }
+
+  .inner-nav__wrapper {
+    width: 440px;
+  }
+
+  .inner-nav__list {
+    flex-direction: row;
+  }
 }

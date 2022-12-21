@@ -11,7 +11,7 @@
   font-size: 24px;
   line-height: (26 / 24);
   padding-bottom: 35px;
-  color: #000000;
+  color: @black;
 }
 
 .contact-details__data {
@@ -32,7 +32,31 @@
   padding: 14px 30px 14px 15px;
   width: 220px;
   border: 1px solid #e7e7e7;
-  color: #444444;
+  color: @special_dark-grey;
   font-size: 16px;
   text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.contact-details__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-details__wrapper {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-details__wrapper {
+    width: 1220px;
+  }
+
+  .contact-details__container {
+    grid-template-columns: 470px 470px;
+    justify-content: space-between;
+  }
 }

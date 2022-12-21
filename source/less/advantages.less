@@ -11,7 +11,7 @@
   font-size: 36px;
   line-height: (40 / 36);
   font-weight: 400;
-  color: #000000;
+  color: @black;
 }
 
 .advantages__list {
@@ -34,7 +34,7 @@
   display: block;
   width: 60px;
   height: 60px;
-  background-color: rgba(104, 183, 56, 1);
+  background-color: @basic_green;
   background-size: 30px 32px;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,5 +53,27 @@
 
   &--weigher {
     background-image: url("../img/advantages-icons/icon-weigher.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 630px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 1220px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

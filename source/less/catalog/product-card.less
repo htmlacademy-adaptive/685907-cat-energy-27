@@ -52,3 +52,27 @@
   grid-column: 1/3;
   grid-row: 3/4;
 }
+
+.product-card__additional {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .product-card__wrapper {
+    width: 324px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .product-card__additional {
+    display: grid;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card__wrapper {
+    width: 245px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
