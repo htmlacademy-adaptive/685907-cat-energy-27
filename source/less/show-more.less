@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .show-more__few {
@@ -58,10 +62,4 @@
   color: @special_dark-grey;
   padding: 10px 94px;
   text-transform: uppercase;
-}
-
-@media (min-width: @tablet-width) {
-  .show-more {
-    display: none;
-  }
 }

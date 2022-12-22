@@ -2,6 +2,14 @@
   width: 320px;
   padding: 11px 20px 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .main-header__wrapper {
@@ -21,20 +29,8 @@
   background-repeat: no-repeat;
   background-size: 24px 16px;
   background-position: center;
-}
 
-@media (min-width: @tablet-width) {
-  .main-header {
-    width: 708px;
-  }
-
-  .main-header__toggle {
+  @media (min-width: @tablet-width) {
     display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-header {
-    width: 1220px;
   }
 }

@@ -5,6 +5,14 @@
 
 .contact-details__wrapper {
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .contact-details__title {
@@ -42,20 +50,8 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-}
 
-@media (min-width: @tablet-width) {
-  .contact-details__wrapper {
-    width: 708px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contact-details__wrapper {
-    width: 1220px;
-  }
-
-  .contact-details__container {
+  @media (min-width: @desktop-width) {
     grid-template-columns: 470px 470px;
     justify-content: space-between;
   }

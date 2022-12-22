@@ -16,20 +16,16 @@
   font-size: 16px;
   line-height: (18 / 16);
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 631px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .comment__input-wrapper {
   margin-bottom: 22px;
-}
-
-@media (min-width: @tablet-width) {
-  .comment__input {
-    width: 631px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .comment__input {
-    width: 1220px;
-  }
 }

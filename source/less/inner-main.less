@@ -1,6 +1,14 @@
 .inner-main {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .inner-main__title-wrapper {
@@ -17,17 +25,7 @@
   color: @black;
 }
 
-@media (min-width: @tablet-width) {
-  .inner-main {
-    width: 708px;
-  }
-}
-
 @media (min-width: @desktop-width) {
-  .inner-main {
-    width: 1220px;
-  }
-
   .inner-main__container {
     display: grid;
     grid-template-columns: 570px 570px;

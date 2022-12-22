@@ -5,12 +5,33 @@
   background-color: #eaeaea;
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    grid-template-columns: 200px 200px 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    grid-template-columns: 220px 220px 1fr;
+  }
 }
 
 .life-example__photo-verification {
   width: 280px;
   height: 256px;
   background-color: #add8e6;
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    grid-column: 1/4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 560px;
+    grid-column: 3/4;
+    grid-row: 1/5;
+  }
 }
 
 .life-example__title {
@@ -19,67 +40,46 @@
   line-height: (40 / 36);
   font-weight: 400;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/4;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/3;
+  }
 }
 
 .life-example__text {
   font-family: "Lato", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/4;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/3;
+  }
 }
 
 .life-example__total-amount {
   line-height: (20 / 14);
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @desktop-width) {
+    grid-row: 4/5;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .life-example {
-    width: 708px;
-    grid-template-columns: 200px 200px 1fr;
-  }
-
-  .life-example__title {
-    grid-column: 1/4;
-  }
-
-  .life-example__text {
-    grid-column: 1/4;
-  }
-
   .life-example__results {
     grid-column: 1/3;
-  }
-
-  .life-example__photo-verification {
-    width: 560px;
-    grid-column: 1/4;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .life-example {
-    width: 1220px;
-    grid-template-columns: 220px 220px 1fr;
-  }
-
-  .life-example__title {
-    grid-column: 1/3;
-  }
-
-  .life-example__text {
-    grid-column: 1/3;
-  }
-
   .life-example__results {
     grid-column: 1/3;
-  }
-
-  .life-example__total-amount {
-    grid-row: 4/5;
-  }
-
-  .life-example__photo-verification {
-    width: 560px;
-    grid-column: 3/4;
-    grid-row: 1/5;
   }
 }

@@ -1,6 +1,14 @@
 .advantages {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .advantages__wrapper {
@@ -16,6 +24,16 @@
 
 .advantages__list {
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .advantages__list-wrapper {
@@ -53,27 +71,5 @@
 
   &--weigher {
     background-image: url("../img/advantages-icons/icon-weigher.svg");
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .advantages {
-    width: 630px;
-  }
-
-  .advantages__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .advantages {
-    width: 1220px;
-  }
-
-  .advantages__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

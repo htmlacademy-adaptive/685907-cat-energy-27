@@ -3,6 +3,11 @@
   padding: 26px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    position: absolute;
+  }
 }
 
 .contacts-wrapper {
@@ -20,11 +25,4 @@
   font-family: "Lato", sans-serif;
   line-height: (20 / 14);
   font-style: normal;
-}
-
-@media (min-width: @desktop-width) {
-  .contacts {
-    width: 565px;
-    position: absolute;
-  }
 }
