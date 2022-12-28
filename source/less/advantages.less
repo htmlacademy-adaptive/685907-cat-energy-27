@@ -1,18 +1,13 @@
+@import "global/index";
+
 .advantages {
-  width: 320px;
   margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: 630px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-  }
 }
 
 .advantages__wrapper {
-  padding: 0 20px;
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .advantages__title {
@@ -38,9 +33,12 @@
 
 .advantages__list-wrapper {
   margin-bottom: 50px;
+  padding: 0;
 }
 
 .advantages__item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
   margin-bottom: 20px;
 }
 

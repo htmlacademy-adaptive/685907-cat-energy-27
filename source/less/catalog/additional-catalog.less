@@ -1,21 +1,11 @@
+@import "../global/index";
+
 .additional-catalog {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: 708px;
-  }
-
   @media (min-width: @desktop-width) {
-    width: 1220px;
     display: grid;
-    grid-template-columns: 900px 1fr;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
   }
-}
-
-.additional-catalog__wrapper {
-  padding: 0 20px;
 }
 
 .additional-catalog__title {
@@ -37,6 +27,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 38px 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional-card {

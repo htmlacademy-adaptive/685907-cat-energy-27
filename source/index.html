@@ -8,7 +8,7 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <div class="main-header__wrapper">
+  <div class="main-header__wrapper container">
     <a href="index.html" class="main-header__logo">
       <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
     </a>
@@ -19,7 +19,6 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link">
@@ -37,7 +36,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </div>
 </header>
@@ -45,14 +43,14 @@
   <div class="main-wrapper">
     <h1 class="visually-hidden">Главная страница магазина Cat Energy.</h1>
     <article class="promo">
-      <div class="promo__wrapper">
+      <div class="promo__wrapper container">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img src="img/promo-image.png" width="280" height="270" alt="Питание для кошек Cat Energy со вкусом курицы." class="promo__image">
-        <a href="form.html" class="button promo__choose-program">Подобрать программу</a>
+        <a href="form.html" class="button promo__link">Подобрать программу</a>
       </div>
     </article>
-    <section class="program program-wrapper">
+    <section class="program program-wrapper container">
       <h2 class="visually-hidden">Доступные программы питания.</h2>
       <ul class="program__list">
         <li class="program__item program__item--cat">
@@ -69,7 +67,7 @@
       </ul>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list advantages__list-wrapper">
           <li class="advantages__item">
@@ -92,30 +90,33 @@
       </div>
     </section>
     <section class="life-example">
-      <h2 class="life-example__title">Живой пример</h2>
-      <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он
-        не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <dl class="life-example__results results">
-        <dt class="results__number">5 кг</dt>
-        <dd class="results__description">снижение веса</dd>
-        <dt class="results__number">60 дней</dt>
-        <dd class="results__description">затрачено времени</dd>
-      </dl>
-      <span class="life-example__total-amount">Затраты на питание: 15 000 руб.</span>
-      <div class="life-example__photo-verification">
-        <span class="visually-hidden">Фотографии до и после программы.</span>
+      <div class="life-example__wrapper container">
+        <h2 class="life-example__title">Живой пример</h2>
+        <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он
+          не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <dl class="life-example__results results">
+          <dt class="results__number">5 кг</dt>
+          <dd class="results__description">снижение веса</dd>
+          <dt class="results__number">60 дней</dt>
+          <dd class="results__description">затрачено времени</dd>
+        </dl>
+        <span class="life-example__total-amount">Затраты на питание: 15 000 руб.</span>
+        <div class="life-example__photo-verification">
+          <span class="visually-hidden">Фотографии до и после программы.</span>
+        </div>
       </div>
     </section>
   </div>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__wrapper">
+  <div class="main-footer__wrapper container">
     <div class="contacts">
       <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
+  </div>
     <div class="main-footer__map"></div>
-    <div class="main-footer__container">
+    <div class="main-footer__container container">
       <a href="#" class="main-footer__logo-title">
         <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
       </a>
@@ -166,7 +167,6 @@
         </a>
       </div>
     </div>
-  </div>
 </footer>
 </body>
 </html>

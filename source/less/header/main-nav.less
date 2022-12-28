@@ -1,12 +1,10 @@
-.main-nav__wrapper {
-  width: 280px;
+@import "../global/index";
 
-  @media (min-width: @tablet-width) {
-    width: 440px;
-  }
+.main-nav {
+  margin-left: auto;
 
-  @media (min-width: @desktop-width) {
-    width: 478px;
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
   }
 }
 

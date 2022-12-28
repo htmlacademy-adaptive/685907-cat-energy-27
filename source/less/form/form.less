@@ -1,18 +1,7 @@
+@import "../global/index";
+
 .form {
   border-top: 1px solid #e6e6e6;
-  width: 320px;
-
-  @media (min-width: @tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-  }
-}
-
-.from-header__wrapper {
-  padding: 0 20px;
 }
 
 .form__title {
@@ -32,14 +21,12 @@
 
 .form__data {
   border: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
