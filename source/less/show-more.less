@@ -1,14 +1,21 @@
 .show-more__wrapper {
-  width: 280px;
-  margin: 0 auto;
   padding-bottom: 25px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    width: 280px;
+  }
 }
 
 .show-more {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .show-more__few {
@@ -55,7 +62,7 @@
   cursor: pointer;
   border: none;
   background-color: #f2f2f2;
-  color: #444444;
+  color: @special_dark-grey;
   padding: 10px 94px;
   text-transform: uppercase;
 }

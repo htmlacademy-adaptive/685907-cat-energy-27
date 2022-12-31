@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="main-header">
-  <div class="main-header__wrapper">
+  <div class="main-header__wrapper container">
     <a href="index.html" class="main-header__logo">
       <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
     </a>
@@ -40,7 +41,7 @@
     </nav>
   </div>
 </header>
-<main class="inner-main">
+<main class="inner-main container">
   <h1 class="inner-main__title inner-main__title-wrapper">Каталог продукции</h1>
   <section class="catalog">
     <ul class="catalog__list">
@@ -149,8 +150,16 @@
           <a href="form.html" class="product-card__button-order button">заказать</a>
         </div>
       </li>
+      <li class="product-card product-card__additional">
+        <div class="product-card__show-more show-more__wrapper">
+          <button type="button" class="show-more__few show-more__few-wrapper"></button>
+          <span class="show-more__products-count show-more__products-wrapper">Показать еще 100500 товаров</span>
+          <span class="show-more__promise show-more__promise-wrapper">На самом деле вкусов гораздо больше!</span>
+          <button type="button" class="show-more__all">Показать все</button>
+        </div>
+      </li>
     </ul>
-    <div class="show-more show-more__wrapper">
+    <div class="show-more show-more__wrapper container">
       <button type="button" class="show-more__few show-more__few-wrapper"></button>
       <span class="show-more__products-count show-more__products-wrapper">Показать еще 100500 товаров</span>
       <span class="show-more__promise show-more__promise-wrapper">На самом деле вкусов гораздо больше!</span>
@@ -204,12 +213,14 @@
   </section>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__wrapper">
-    <div class="contacts contacts-wrapper">
+  <div class="main-footer__wrapper container">
+    <div class="contacts">
       <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
-    <div class="main-footer__map"></div>
+  </div>
+  <div class="main-footer__map"></div>
+  <div class="main-footer__container container">
     <a href="#" class="main-footer__logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
     </a>

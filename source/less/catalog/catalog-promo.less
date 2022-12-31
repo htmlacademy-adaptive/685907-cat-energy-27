@@ -4,6 +4,14 @@
   width: 280px;
   text-decoration: none;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
 
 .additional-catalog__promo-image {
@@ -11,6 +19,14 @@
   background-position: center;
   background-size: 280px 290px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 280px 290px;
+  }
 }
 
 .additional-catalog__promo-wrapper {
@@ -21,11 +37,19 @@
   background-image: url("../../img/icon_gift.svg");
   background-repeat: no-repeat;
   background-position: top 60px center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 290px;
+  }
 }
 
 .additional-catalog__promo-text {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: (20 / 16);
-  color: #ffffff;
+  color: @white;
 }

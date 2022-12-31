@@ -1,3 +1,4 @@
+@import "global/index";
 @import "header/main-nav";
 @import "header/main-header";
 @import "header/inner-nav";
@@ -23,7 +24,6 @@
 @import "footer/contacts";
 @import "footer/social";
 @import "footer/copyright";
-@import "buttons";
 
 @font-face {
   font-family: "Lato";
@@ -62,8 +62,8 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: (18 / 14);
-  background-color: #ffffff;
-  color: #444444;
+  background-color: @white;
+  color: @special_dark-grey;
 }
 
 main {

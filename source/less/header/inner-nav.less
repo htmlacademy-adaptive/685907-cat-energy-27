@@ -1,9 +1,17 @@
 .inner-nav {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .inner-nav__wrapper {
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+  }
 }
 
 .inner-nav__list {
@@ -12,6 +20,10 @@
   flex-direction: column;
   align-items: center;
   padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .inner-nav__item {
@@ -28,5 +40,5 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: #000000;
+  color: @black;
 }

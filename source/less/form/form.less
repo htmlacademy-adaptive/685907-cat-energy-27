@@ -1,20 +1,15 @@
 .form {
   border-top: 1px solid #e6e6e6;
-  width: 320px;
-}
-
-.from-header__wrapper {
-  padding: 0 20px;
 }
 
 .form__title {
   font-size: 36px;
   line-height: 1;
-  color: #000000;
+  color: @black;
 }
 
 .form__text {
-  color: #000000;
+  color: @black;
 }
 
 .form__text-wrapper {
@@ -24,6 +19,13 @@
 
 .form__data {
   border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__button-submit {
@@ -41,9 +43,18 @@
   font-family: "Lato", sans-serif;
   line-height: (16 / 14);
   text-align: center;
-  color: #000000;
+  color: @black;
 }
 
 .form__legend-wrapper {
   margin-bottom: 32px;
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }

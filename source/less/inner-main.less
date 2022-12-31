@@ -1,12 +1,18 @@
-.inner-main {
-  width: 320px;
-  margin: 0 auto;
+.inner-main__wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .inner-main__title-wrapper {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
-  padding: 27px 20px 41px 20px;
 }
 
 .inner-main__title {
@@ -14,5 +20,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
-  color: #000000;
+  color: @black;
+}
+
+@media (min-width: @desktop-width) {
+  .inner-main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
 }

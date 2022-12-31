@@ -4,17 +4,21 @@
 }
 
 .cat-data__wrapper {
-  width: 280px;
-  margin: 0 auto;
   display: flex;
-  align-items: baseline;
   flex-wrap: wrap;
+}
+
+.cat-data__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
 }
 
 .cat-data__input-label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #444444;
+  color: @special_dark-grey;
   margin-right: 9px;
 }
 
@@ -24,7 +28,7 @@
   width: 177px;
   padding: 14px 20px;
   border: 1px solid #e7e7e7;
-  color: #444444;
+  color: @special_dark-grey;
   font-size: 16px;
   text-transform: uppercase;
 }

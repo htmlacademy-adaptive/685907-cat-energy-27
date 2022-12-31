@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="main-header">
-  <div class="main-header__wrapper">
+  <div class="main-header__wrapper container">
     <a href="index.html" class="main-header__logo">
       <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
     </a>
@@ -21,17 +22,17 @@
       <div class="inner-nav__wrapper">
         <ul class="inner-nav__list">
           <li class="inner-nav__item inner-nav__item--active">
-            <a href="index.html">
+            <a class="inner-nav__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="inner-nav__item">
-            <a href="catalog.html">
+            <a class="inner-nav__link">
               Каталог продукции
             </a>
           </li>
           <li class="inner-nav__item">
-            <a>
+            <a class="inner-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -40,53 +41,61 @@
     </nav>
   </div>
 </header>
-<main class="inner-main">
+<main class="inner-main container">
   <div class="inner-main__wrapper">
     <form action="https://echo.htmlacademy.ru/" method="GET" class="form form__wrapper">
       <div class="from-header__wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <span class="form__text form__text-wrapper">Заполните анкету, и мы подберем программу питания для вашего кота</span>
       </div>
-      <fieldset class="form__data cat-data">
-        <div class="cat-data__wrapper">
-          <legend class="cat-data__title visually-hidden">Данные о коте</legend>
-          <label for="name" class="cat-data__input-label">Имя:*</label>
-          <input type="text" id="name" class="cat-data__input cat-data__input-wrapper" value="БАРСИК" name="cat-name" required>
-          <label for="weight" class="cat-data__input-label">Вес (кг):*</label>
-          <input type="text" id="weight" class="cat-data__input cat-data__input-wrapper" value="7" name="cat-weight" required>
-          <label for="age" class="cat-data__input-label">Возраст (лет):</label>
-          <input type="text" id="age" class="cat-data__input cat-data__input-wrapper" value="7" name="cat-age">
-        </div>
-      </fieldset>
-      <fieldset class="form__data cat-mission">
-        <div class="cat-mission__wrapper">
-          <legend class="cat-mission__title visually-hidden">Цель</legend>
-          <label class="cat-mission__control">
-            <input class="cat-mission__control-input" type="radio" name="cat-mission" value="weight-loss" checked>
-            <span class="cat-mission__control-label">похудение</span>
-          </label>
-          <label class="cat-mission__control">
-            <input class="cat-mission__control-input" type="radio" name="cat-mission" value="mass-gain">
-            <span class="cat-mission__control-label">Набор массы</span>
-          </label>
-          <label class="cat-mission__control">
-            <input class="cat-mission__control-input" type="radio" name="cat-mission" value="dont-know">
-            <span class="cat-mission__control-label">Не знаю (Нужен ваш совет)</span>
-          </label>
-        </div>
-      </fieldset>
+      <div class="inner-main__container">
+        <fieldset class="form__data cat-data">
+          <div class="cat-data__wrapper">
+            <legend class="cat-data__title visually-hidden">Данные о коте</legend>
+            <div class="cat-data__container">
+              <label for="name" class="cat-data__input-label">Имя:*</label>
+              <input type="text" id="name" class="cat-data__input cat-data__input-wrapper" value="БАРСИК" name="cat-name" required>
+            </div>
+            <div class="cat-data__container">
+              <label for="weight" class="cat-data__input-label">Вес (кг):*</label>
+              <input type="text" id="weight" class="cat-data__input cat-data__input-wrapper" value="7" name="cat-weight" required>
+            </div>
+            <div class="cat-data__container">
+              <label for="age" class="cat-data__input-label">Возраст (лет):</label>
+              <input type="text" id="age" class="cat-data__input cat-data__input-wrapper" value="7" name="cat-age">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form__data cat-mission">
+          <div class="cat-mission__wrapper">
+            <legend class="cat-mission__title visually-hidden">Цель</legend>
+            <label class="cat-mission__control">
+              <input class="cat-mission__control-input" type="radio" name="cat-mission" value="weight-loss" checked>
+              <span class="cat-mission__control-label">похудение</span>
+            </label>
+            <label class="cat-mission__control">
+              <input class="cat-mission__control-input" type="radio" name="cat-mission" value="mass-gain">
+              <span class="cat-mission__control-label">Набор массы</span>
+            </label>
+            <label class="cat-mission__control">
+              <input class="cat-mission__control-input" type="radio" name="cat-mission" value="dont-know">
+              <span class="cat-mission__control-label">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
       <fieldset class="form__data contact-details">
-        <div class="contact-details__wrapper">
           <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
-          <label class="contact-details__data">
-            <span class="contact-details__label">E-mail:*</span>
-            <input class="contact-details__input" type="text" value="kuklachev@gmail.com" name="email" required>
-          </label>
-          <label class="contact-details__data">
-            <span class="contact-details__label">Телефон:*</span>
-            <input class="contact-details__input" type="text" value="8 (960) 900-60-90" name="phone" required>
-          </label>
-        </div>
+          <div class="contact-details__container">
+            <label class="contact-details__data">
+              <span class="contact-details__label">E-mail:*</span>
+              <input class="contact-details__input" type="text" value="kuklachev@gmail.com" name="email" required>
+            </label>
+            <label class="contact-details__data">
+              <span class="contact-details__label">Телефон:*</span>
+              <input class="contact-details__input" type="text" value="8 (960) 900-60-90" name="phone" required>
+            </label>
+          </div>
       </fieldset>
       <fieldset class="form__data">
         <legend class="comment__title">Комментарий</legend>
@@ -113,18 +122,22 @@
           <span class="additional-info__label">витамины</span>
         </label>
       </fieldset>
-      <button class="form__button-submit form__button-submit-wrapper button" type="submit">отправить заявку</button>
-      <span class="form__legend form__legend-wrapper">* — Обязательные поля</span>
+      <div class="form__container">
+        <button class="form__button-submit form__button-submit-wrapper button" type="submit">отправить заявку</button>
+        <span class="form__legend form__legend-wrapper">* — Обязательные поля</span>
+      </div>
     </form>
   </div>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__wrapper">
-    <div class="contacts contacts-wrapper">
+  <div class="main-footer__wrapper container">
+    <div class="contacts">
       <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
-    <div class="main-footer__map"></div>
+  </div>
+  <div class="main-footer__map"></div>
+  <div class="main-footer__container container">
     <a href="#" class="main-footer__logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
     </a>
