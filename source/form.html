@@ -18,21 +18,21 @@
     <button class="main-header__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="inner-nav">
+    <nav class="inner-nav inner-nav--nojs">
       <div class="inner-nav__wrapper">
         <ul class="inner-nav__list">
-          <li class="inner-nav__item inner-nav__item--active">
+          <li class="inner-nav__item">
             <a class="inner-nav__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="inner-nav__item">
-            <a class="inner-nav__link">
+            <a href="catalog.html" class="inner-nav__link">
               Каталог продукции
             </a>
           </li>
           <li class="inner-nav__item">
-            <a class="inner-nav__link" href="form.html">
+            <a class="inner-nav__link inner-nav__link--active" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -41,12 +41,12 @@
     </nav>
   </div>
 </header>
-<main class="inner-main container">
-  <div class="inner-main__wrapper">
+<main class="inner-main">
+  <div class="inner-main__wrapper container">
     <form action="https://echo.htmlacademy.ru/" method="GET" class="form form__wrapper">
       <div class="from-header__wrapper">
         <h1 class="form__title">Подбор программы</h1>
-        <span class="form__text form__text-wrapper">Заполните анкету, и мы подберем программу питания для вашего кота</span>
+        <span class="form__text form__text-wrapper">Заполните анкету, и мы подберем <br> программу питания для вашего кота</span>
       </div>
       <div class="inner-main__container">
         <fieldset class="form__data cat-data">
@@ -85,17 +85,17 @@
         </fieldset>
       </div>
       <fieldset class="form__data contact-details">
-          <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
-          <div class="contact-details__container">
-            <label class="contact-details__data">
-              <span class="contact-details__label">E-mail:*</span>
-              <input class="contact-details__input" type="text" value="kuklachev@gmail.com" name="email" required>
-            </label>
-            <label class="contact-details__data">
-              <span class="contact-details__label">Телефон:*</span>
-              <input class="contact-details__input" type="text" value="8 (960) 900-60-90" name="phone" required>
-            </label>
-          </div>
+        <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
+        <div class="contact-details__container">
+          <label class="contact-details__data">
+            <span class="contact-details__label">E-mail:*</span>
+            <input class="contact-details__input contact-details__input-email" type="text" value="kuklachev@gmail.com" name="email" required>
+          </label>
+          <label class="contact-details__data">
+            <span class="contact-details__label">Телефон:*</span>
+            <input class="contact-details__input contact-details__input-phone" type="text" value="8 (960) 900-60-90" name="phone" required>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form__data">
         <legend class="comment__title">Комментарий</legend>
@@ -130,13 +130,19 @@
   </div>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__wrapper container">
-    <div class="contacts">
-      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+  <div class="main-footer__wrapper">
+    <div class="contacts container">
+      <p class="contacts__text">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span><br>Санкт-Петербург</span></address>
     </div>
   </div>
-  <div class="main-footer__map"></div>
+  <div class="main-footer__map-wrapper">
+    <iframe class="main-footer__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            allowfullscreen
+            title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
+    ></iframe>
+  </div>
   <div class="main-footer__container container">
     <a href="#" class="main-footer__logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">

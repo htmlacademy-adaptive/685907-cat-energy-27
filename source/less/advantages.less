@@ -19,13 +19,30 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 130px;
+    row-gap: 37px;
+    grid-template-columns: 250px 250px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.advantages__card-number {
+  position: relative;
+  font-size: 280px;
+  line-height: 1;
+  color: #f2f2f2;
+  z-index: 0;
+  grid-column: 2/3;
+  grid-row: 1/3;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -38,10 +55,24 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   margin-bottom: 20px;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: min-content min-content;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .advantages__text {
   font-family: "Lato", sans-serif;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 16px;
+    line-height: (24 / 16);
+  }
 }
 
 .advantages__icon {
@@ -52,6 +83,12 @@
   background-size: 30px 32px;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 
   &--leaf {
     background-image: url("../img/advantages-icons/icon_leaf.svg");

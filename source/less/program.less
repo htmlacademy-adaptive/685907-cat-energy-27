@@ -22,16 +22,30 @@
   margin-bottom: 20px;
   background-repeat: no-repeat;
 
+  @media (min-width: @tablet-width) {
+    padding: 77px 54px 53px 54px;
+  }
+
   &--cat {
     background-image: url("../img/cat_black.svg");
     background-size: 50px 53px;
     background-position: 21px 22px;
+
+    @media (min-width: @tablet-width) {
+      background-position: center right 50px;
+      background-size: 200px 211px;
+    }
   }
 
   &--pantera {
     background-image: url("../img/panter_black.svg");
     background-size: 67px 50px;
     background-position: 13px 24px;
+
+    @media (min-width: @tablet-width) {
+      background-position: center right 30px;
+      background-size: 268px 200px;
+    }
   }
 }
 
@@ -44,13 +58,29 @@
   line-height: (37 / 24);
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-size: 36px;
+    line-height: 1;
+  }
 }
 
 .program__description {
   font-family: "Lato", sans-serif;
   padding-bottom: 23px;
-  border-bottom: 1px solid #d9d9d9;
   margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 48px;
+    margin-right: 261px;
+    font-size: 16px;
+    line-height: (24 / 16);
+  }
 }
 
 .program__link {
@@ -65,4 +95,10 @@
   background-position: center left 100px;
   background-repeat: no-repeat;
   background-size: 32px 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: (30 / 20);
+    background-position: center left 140px;
+  }
 }

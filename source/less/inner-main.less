@@ -11,8 +11,10 @@
 }
 
 .inner-main__title-wrapper {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .inner-main__title {
@@ -21,6 +23,13 @@
   font-size: 36px;
   line-height: 1;
   color: @black;
+  padding-top: 27px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -28,5 +37,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    column-gap: 80px;
   }
 }
