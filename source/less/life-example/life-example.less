@@ -8,10 +8,16 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 224px 1fr;
+    padding-bottom: 75px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -19,22 +25,26 @@
   width: 280px;
   height: 256px;
   background-color: #add8e6;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     width: 560px;
     grid-column: 1/4;
+    margin-top: 100px;
   }
 
   @media (min-width: @desktop-width) {
     width: 560px;
     grid-column: 3/4;
     grid-row: 1/5;
+    margin: 0;
   }
 }
 
 .life-example__title {
-  margin: 0;
-  margin-top: 25px;
+  margin: 25px 0 40px;
   font-size: 36px;
   line-height: (40 / 36);
   font-weight: 400;
@@ -42,22 +52,30 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 1/4;
+    font-size: 60px;
+    line-height: 1;
+    margin: 43px 0 63px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 1/3;
+    grid-column: 1/2;
   }
 }
 
 .life-example__text {
   font-family: "Lato", sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/4;
+    font-size: 16px;
+    line-height: (24 / 16);
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 1/3;
+    grid-column: 1/2;
   }
 }
 
@@ -65,20 +83,42 @@
   line-height: (20 / 14);
   text-transform: uppercase;
   color: @black;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+    font-size: 20px;
+    line-height: 1;
+  }
 
   @media (min-width: @desktop-width) {
     grid-row: 4/5;
+    text-align: left;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .life-example__results {
-    grid-column: 1/3;
+.life-example__total-value {
+  @media (min-width: @desktop-width) {
+    margin-left: 63px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .life-example__results {
+.life-example__results {
+  margin: 0;
+  margin-bottom: -15px;
+
+  @media (min-width: @tablet-width) {
     grid-column: 1/3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
   }
 }
