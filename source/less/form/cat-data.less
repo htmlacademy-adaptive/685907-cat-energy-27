@@ -1,8 +1,8 @@
 .cat-data {
-  margin-bottom: 22px;
+  margin-bottom: 10px;
 
-  @media (max-width: @mobile-width-only) {
-    border-bottom: 1px solid #e6e6e6;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 71px;
   }
 }
 
@@ -16,6 +16,10 @@
   justify-content: space-between;
   width: 100%;
   align-items: baseline;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 }
 
 .cat-data__input-label {
@@ -23,7 +27,7 @@
   line-height: (18 / 16);
   text-transform: uppercase;
   color: @special_dark-grey;
-  margin-right: 9px;
+  margin-right: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -46,8 +50,4 @@
     font-size: 20px;
     line-height: (30 / 20);
   }
-}
-
-.cat-data__input-wrapper {
-  margin-bottom: 14px;
 }

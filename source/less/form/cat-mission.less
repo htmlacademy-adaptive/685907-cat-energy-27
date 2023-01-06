@@ -1,18 +1,28 @@
 .cat-mission {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 
-  @media (max-width: @mobile-width-only) {
-    border-bottom: 1px solid #e6e6e6;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 71px;
   }
 }
 
 .cat-mission__wrapper {
-  width: 280px;
+  margin-top: 22px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .cat-mission__control {
   display: flex;
-  margin-bottom: 19px;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
 }
 
 .cat-mission__control-input {

@@ -8,6 +8,7 @@
 .program__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -35,6 +36,11 @@
       background-position: center right 50px;
       background-size: 200px 211px;
     }
+
+    @media (min-width: @desktop-width) {
+      background-position: left 60px top 40px;
+      background-size: 100px 106px;
+    }
   }
 
   &--pantera {
@@ -45,6 +51,11 @@
     @media (min-width: @tablet-width) {
       background-position: center right 30px;
       background-size: 268px 200px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: left 40px top 40px;
+      background-size: 134px 100px;
     }
   }
 }
@@ -64,6 +75,12 @@
     font-size: 36px;
     line-height: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .program__description {
@@ -80,6 +97,10 @@
     margin-right: 261px;
     font-size: 16px;
     line-height: (24 / 16);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 

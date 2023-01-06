@@ -32,11 +32,19 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .inner-main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    column-gap: 80px;
+.inner-main__container {
+  margin-bottom: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: @desktop-width) {
+    .inner-main__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      column-gap: 80px;
+    }
   }
 }
