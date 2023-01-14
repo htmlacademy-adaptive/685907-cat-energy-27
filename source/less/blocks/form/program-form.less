@@ -1,0 +1,113 @@
+.program-form__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 46px;
+  padding-bottom: 50px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.program-form__info-list {
+  margin: 0;
+  flex: 1 1 570px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.program-form__list {
+  @media (min-width: @desktop-width) {
+    flex: 0 0 570px;
+    margin: 0 0 0 80px;
+  }
+}
+
+.program-form__fieldset-wrap {
+  margin-top: 32px;
+  border-top: 2px solid @basic_green;
+}
+
+.program-form__fieldset-container {
+  margin-top: -32px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.program-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.program-form__legend {
+  margin-left: -20px;
+  padding: 8px 20px;
+  font-size: 36px;
+  line-height: 1;
+  color: @black;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -40px;
+    padding: 8px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -20px;
+    padding: 8px 20px;
+  }
+}
+
+.program-form__contacts-list {
+  margin-bottom: 24px;
+  margin-top: 35px;
+}
+
+.program-form__comment-input {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 65px;
+  padding: 10px 15px;
+  border: 1px solid #e7e7e7;
+  font-size: 16px;
+  line-height: (18 / 16);
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: (30 / 20);
+  }
+}
+
+.program-form__additional-info {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

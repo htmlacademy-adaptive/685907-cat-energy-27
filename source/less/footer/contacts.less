@@ -7,6 +7,16 @@
   align-items: center;
   column-gap: 2px;
 
+  @media (max-width: @desktop-width) {
+    &--white-background {
+      background-color: @white;
+    }
+
+    &--gray-background {
+      background-color: #f2f2f2;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding: 56px 70px;
   }

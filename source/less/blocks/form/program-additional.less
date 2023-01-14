@@ -1,0 +1,52 @@
+.program-additional {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.program-additional__i {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.program-additional__label {
+  text-transform: uppercase;
+  padding-left: 62px;
+  font-size: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: (30 / 20);
+  }
+}
+
+.program-additional__input-mark {
+  position: absolute;
+  content: "";
+  background-image: url("../../../img/checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.program-additional__input[type="checkbox"]:checked + .program-additional__input-mark::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../../img/check-for-checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
