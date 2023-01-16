@@ -4,7 +4,21 @@
   margin-left: auto;
 
   @media (max-width: @mobile-width-only) {
-    width: 100%;
+
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      display: block;
+      position: absolute;
+      background-color: @white;
+      margin-right: auto;
+      top: 40px;
+      right: 0;
+      left: 0;
+      min-width: 320px;
+    }
   }
 
   @media (min-width: @tablet-width) {

@@ -3,6 +3,7 @@
 .catalog {
   @media (max-width: @mobile-width-only) {
     border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @tablet-width) {
@@ -35,68 +36,4 @@
   }
 }
 
-.catalog__additional {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
-.catalog__additional-wrap {
-  margin-top: 32px;
-  border-top: 2px solid @basic_green;
-}
-
-.catalog__additional-container {
-  margin-top: -32px;
-}
-
-.catalog__legend {
-  margin-left: -20px;
-  padding: 8px 20px;
-  font-size: 36px;
-  line-height: 1;
-  color: @black;
-  background-color: @white;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 0;
-    padding: 8px 40px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: -20px;
-    padding: 8px 20px;
-  }
-}
-
-.catalog__contacts-list {
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (min-width: @tablet-width) {
-    margin: 38px 26px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
-}
-
-.catalog__wrap {
-  display: grid;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 76px;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 3fr 1fr;
-    column-gap: 80px;
-    margin-bottom: 80px;
-    margin-top: 80px;
-  }
-}

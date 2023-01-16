@@ -4,33 +4,29 @@
   margin-left: auto;
 
   @media (max-width: @mobile-width-only) {
-    width: 100%;
-  }
 
-  @media (min-width: @tablet-width) {
-    display: block;
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      display: block;
+      position: absolute;
+      background-color: @white;
+      margin-right: auto;
+      top: 40px;
+      right: 0;
+      left: 0;
+      min-width: 320px;
+    }
   }
 
   &--nojs {
     display: block;
-    //width: 100%;
 
     @media (min-width: @tablet-width) {
       width: auto;
     }
-  }
-
-  &--closed {
-    display: none;
-  }
-
-  &--open {
-    display: flex;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    left: 0;
-    background-color: @white;
   }
 }
 
