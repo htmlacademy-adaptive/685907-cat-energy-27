@@ -1,3 +1,5 @@
+@import "../variables";
+
 .copyright__link-academy {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -11,4 +13,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 22px 0;
+  width: 100%;
+}
+
+.copyright__text {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 27px;
+  }
 }

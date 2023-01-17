@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.program-contacts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.program-contacts__i {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.program-contacts__input {
+  font-family: "Oswald", sans-serif;
+  padding: 14px 50px 14px 15px;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  color: @special_dark-grey;
+  font-size: 16px;
+  text-transform: uppercase;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  background-size: 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: (30 / 20);
+  }
+}
+
+.program-contacts__label {
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: (18 / 16);
+  text-transform: uppercase;
+  margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: (30 / 20);
+    margin-right: 20px;
+  }
+}

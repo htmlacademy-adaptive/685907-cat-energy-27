@@ -1,88 +1,49 @@
-@import "global/index";
+// common
+@import "variables";
+@import "typography";
+@import "scaffolding";
+@import "grid";
+
+// blocks common
+@import "blocks/common/button";
+@import "blocks/common/control-label";
+@import "blocks/common/control-input";
+@import "blocks/common/control-radio";
+@import "blocks/common/main";
+@import "blocks/common/visually-hidden";
+
+// home page
+@import "blocks/home/promo";
+@import "blocks/home/program";
+@import "blocks/home/advantages";
+@import "blocks/home/life-example";
+@import "blocks/home/results";
+
+// catalog page
+@import "blocks/catalog/show-more";
+@import "blocks/catalog/product-card";
+@import "blocks/catalog/info-description";
+@import "blocks/catalog/additional-catalog";
+@import "blocks/catalog/catalog-promo";
+@import "blocks/catalog/catalog";
+@import "blocks/catalog/sub-catalog";
+
+// form page
+@import "blocks/form/program-form";
+@import "blocks/form/program-info";
+@import "blocks/form/program-choose";
+@import "blocks/form/program-contacts";
+@import "blocks/form/program-additional";
+@import "blocks/form/program-submit";
+@import "blocks/form/form-page";
+
+// header
 @import "header/main-nav";
 @import "header/main-header";
 @import "header/inner-nav";
-@import "promo";
-@import "program";
-@import "advantages";
-@import "show-more";
-@import "inner-main";
-@import "form/form";
-@import "form/cat-data";
-@import "form/cat-mission";
-@import "form/contact-details";
-@import "form/comment";
-@import "form/additional-info";
-@import "catalog/catalog";
-@import "catalog/product-card";
-@import "catalog/info-description";
-@import "catalog/additional-catalog";
-@import "catalog/catalog-promo";
-@import "life-example/life-example";
-@import "life-example/results";
+
+// footer
 @import "footer/main-footer";
 @import "footer/contacts";
 @import "footer/social";
 @import "footer/copyright";
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  min-width: 320px;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: (18 / 14);
-  background-color: @white;
-  color: @special_dark-grey;
-}
-
-main {
-  flex-grow: 1;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

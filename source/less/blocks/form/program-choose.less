@@ -1,0 +1,23 @@
+@import "../../variables";
+
+.program-choose {
+  width: 100%;
+  list-style: none;
+  padding: 24px 28px;
+  border: 1px solid #e7e7e7;
+  margin-top: 72px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.program-choose__i {
+  & + .program-choose__i {
+    margin-top: 13px;
+  }
+}

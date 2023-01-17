@@ -1,0 +1,54 @@
+@import "../../variables";
+
+.control-radio__label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: (18 / 16);
+  text-transform: uppercase;
+
+  &:hover,
+  input[type="radio"]:focus-visible + & {
+    .control-radio__box {
+      border-color: #bababa;
+    }
+  }
+
+  input[type="radio"]:focus-visible + & {
+    outline: auto;
+    outline-color: -webkit-focus-ring-color;
+  }
+
+  input[type="radio"]:disabled + & {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: (30 / 20);
+  }
+}
+
+.control-radio__box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  input[type="radio"]:checked + .control-radio__label & {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+      height: 18px;
+      background-color: @basic_green;
+      border-radius: 50%;
+    }
+  }
+}
