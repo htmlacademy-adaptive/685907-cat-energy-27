@@ -10,6 +10,10 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .program-contacts__input {
@@ -28,6 +32,14 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: (30 / 20);
+  }
+
+  &--email-icon {
+    background-image: url("../../../img/email-icon.svg");
+  }
+
+  &--phone-icon {
+    background-image: url("../../../img/phone-icon.svg");
   }
 }
 
