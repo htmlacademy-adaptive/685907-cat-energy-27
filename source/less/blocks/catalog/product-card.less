@@ -2,9 +2,14 @@
 
 .product-card {
   list-style-type: none;
+  height: 100%;
 
   @media (max-width: @mobile-width-only) {
     border-bottom: 1px solid #ebebeb;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }
 

@@ -112,11 +112,11 @@
         <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он
           не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <ul class="life-example__results results">
-          <li class="result__value">
+          <li class="results__value">
             <p class="results__number">5 кг</p>
             <p class="results__description">снижение<br> веса</p>
           </li>
-          <li class="result__value">
+          <li class="results__value">
             <p class="results__number">60 дней</p>
             <p class="results__description">затрачено<br> времени</p>
           </li>
@@ -124,11 +124,16 @@
         <p class="life-example__total-amount">Затраты на питание: <span class="life-example__total-value"><br>15 000 руб.</span></p>
       </div>
       <div class="life-example__photo-verification">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/cat-slider-desktop@1x.png 1x, img/cat-slider-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/cat-slider-tablet@1x.png 1x, img/cat-slider-tablet@2x.png 2x">
-          <img src="img/cat-slider-mobile.png" alt="Логотип магазина Cat Energy." class="life-example--photo">
-        </picture>
+        <div class="life-example__photo-verification-before"></div>
+        <div class="life-example__photo-verification-after"></div>
+        <div class="life-example__slider-control slider-control" style="left: 50%">
+          <button class="slider-control__button">
+            <svg class="slider-control__button-arrows" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0L0 9L8 18V0Z" fill="#666666"/>
+              <path d="M24 9L16 0V18L24 9Z" fill="#666666"/>
+            </svg>
+          </button>
+        </div>
         <span class="visually-hidden">Фотографии до и после программы.</span>
       </div>
     </div>
