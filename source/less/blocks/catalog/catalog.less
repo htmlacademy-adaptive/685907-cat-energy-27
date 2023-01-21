@@ -9,6 +9,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin-top: 100px;
     margin-bottom: 65px;
   }
 
@@ -20,18 +21,21 @@
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 40px;
   align-items: stretch;
   padding: 0;
+  margin-top: 18px;
 
   @media (min-width: @tablet-width) {
     gap: 60px;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    row-gap: 100px;
   }
 
   @media (min-width: @desktop-width) {
     column-gap: 80px;
-    row-gap: 63px;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;

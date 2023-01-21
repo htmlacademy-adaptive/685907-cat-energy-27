@@ -15,7 +15,11 @@
 <header class="main-header">
   <div class="main-header__wrapper container">
     <a href="index.html" class="main-header__logo">
-      <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="100%" height="100%">
+      </picture>
     </a>
     <a href="index.html" class="main-header__logo-title logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
@@ -23,7 +27,7 @@
     <button class="main-header__toggle main-header__close-toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="inner-nav inner-nav--opened">
+    <nav class="inner-nav inner-nav--nojs">
       <div class="inner-nav__wrapper">
         <ul class="inner-nav__list">
           <li class="inner-nav__item">
@@ -54,7 +58,13 @@
     <ul class="catalog__list">
       <li class="product-card">
         <div class="product-card__wrapper container product-card__decoration-line">
-          <img class="product-card__image" src="img/products/product-1_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+          <div class="product-card__picture-wrap">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/desktop/product-1-desktop-small@1x.png 1x, img/products/desktop/product-1-desktop-small@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/tablet/product-1-tablet-small@1x.png 1x, img/products/tablet/product-1-tablet-small@2x.png 2x">
+              <img class="product-card__image" src="img/products/mobile/product-1-mobile-small@1x.png" srcset="img/products/mobile/product-1-mobile-small@2x.png 2x" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+            </picture>
+          </div>
           <h3 class="product-card__title">Cat Energy <br> PRO 500 г</h3>
           <dl class="product-card__info-description">
             <dt class="info-description__item-termin">Масса</dt>
@@ -69,7 +79,13 @@
       </li>
       <li class="product-card">
         <div class="product-card__wrapper container product-card__decoration-line">
-          <img class="product-card__image" src="img/products/product-1_big.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+          <div class="product-card__picture-wrap">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/desktop/product-2-desktop-bigger@1x.png 1x, img/products/desktop/product-2-desktop-bigger@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/tablet/product-2-tablet-bigger@1x.png 1x, img/products/tablet/product-2-tablet-bigger@2x.png 2x">
+              <img class="product-card__image" src="img/products/mobile/product-2-mobile-bigger@1x.png" srcset="img/products/mobile/product-2-mobile-bigger@2x.png 2x" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+            </picture>
+          </div>
           <h3 class="product-card__title">Cat Energy <br> PRO 1000 г</h3>
           <dl class="product-card__info-description">
             <dt class="info-description__item-termin">Масса</dt>
@@ -84,7 +100,13 @@
       </li>
       <li class="product-card">
         <div class="product-card__wrapper container product-card__decoration-line">
-          <img class="product-card__image" src="img/products/product-2_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+          <div class="product-card__picture-wrap">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/desktop/product-3-desktop-small@1x.png 1x, img/products/desktop/product-3-desktop-small@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/tablet/product-3-tablet-small@1x.png 1x, img/products/tablet/product-3-tablet-small@2x.png 2x">
+              <img class="product-card__image" src="img/products/mobile/product-3-mobile-small@1x.png" srcset="img/products/mobile/product-3-mobile-small@2x.png 2x" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+            </picture>
+          </div>
           <h3 class="product-card__title">Cat Energy <br> PRO 500 г</h3>
           <dl class="product-card__info-description">
             <dt class="info-description__item-termin">Масса</dt>
@@ -99,7 +121,13 @@
       </li>
       <li class="product-card">
         <div class="product-card__wrapper container product-card__decoration-line">
-          <img class="product-card__image" src="img/products/product-2_big.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+          <div class="product-card__picture-wrap">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/desktop/product-4-desktop-bigger@1x.png 1x, img/products/desktop/product-4-desktop-bigger@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/tablet/product-4-tablet-bigger@1x.png 1x, img/products/tablet/product-4-tablet-bigger@2x.png 2x">
+              <img class="product-card__image" src="img/products/mobile/product-4-mobile-bigger@1x.png" srcset="img/products/mobile/product-4-mobile-bigger@2x.png 2x" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+            </picture>
+          </div>
           <h3 class="product-card__title">Cat Energy <br> PRO 1000 г</h3>
           <dl class="product-card__info-description info-description">
             <dt class="info-description__item-termin">Масса</dt>
@@ -114,7 +142,13 @@
       </li>
       <li class="product-card">
         <div class="product-card__wrapper container product-card__decoration-line">
-          <img class="product-card__image" src="img/products/product-3_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+          <div class="product-card__picture-wrap">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/desktop/product-5-desktop-small@1x.png 1x, img/products/desktop/product-5-desktop-small@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/tablet/product-5-tablet-small@1x.png 1x, img/products/tablet/product-5-tablet-small@2x.png 2x">
+              <img class="product-card__image" src="img/products/mobile/product-5-mobile-small@1x.png" srcset="img/products/mobile/product-5-mobile-small@2x.png 2x" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+            </picture>
+          </div>
           <h3 class="product-card__title">Cat Energy <br> SLIM 500 г</h3>
           <dl class="product-card__info-description">
             <dt class="info-description__item-termin">Масса</dt>
@@ -129,7 +163,13 @@
       </li>
       <li class="product-card">
         <div class="product-card__wrapper container product-card__decoration-line">
-          <img class="product-card__image" src="img/products/product-3_big.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+          <div class="product-card__picture-wrap">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/desktop/product-6-desktop-bigger@1x.png 1x, img/products/desktop/product-6-desktop-bigger@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/tablet/product-6-tablet-bigger@1x.png 1x, img/products/tablet/product-6-tablet-bigger@2x.png 2x">
+              <img class="product-card__image" src="img/products/mobile/product-6-mobile-bigger@1x.png" srcset="img/products/mobile/product-6-mobile-bigger@2x.png 2x" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+            </picture>
+          </div>
           <h3 class="product-card__title">Cat Energy <br> SLIM 1000 г</h3>
           <dl class="product-card__info-description">
             <dt class="info-description__item-termin">Масса</dt>
@@ -144,7 +184,13 @@
       </li>
       <li class="product-card">
         <div class="product-card__wrapper container product-card__decoration-line">
-          <img class="product-card__image" src="img/products/product-4_small.jpg" width="140" height="112" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+          <div class="product-card__picture-wrap">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/desktop/product-7-desktop-small@1x.png 1x, img/products/desktop/product-7-desktop-small@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/tablet/product-7-tablet-small@1x.png 1x, img/products/tablet/product-7-tablet-small@2x.png 2x">
+              <img class="product-card__image" src="img/products/mobile/product-7-mobile-small@1x.png" srcset="img/products/mobile/product-7-mobile-small@2x.png 2x" alt="Маленькая упаковка корма 500гр, со вкусом курицы.">
+            </picture>
+          </div>
           <h3 class="product-card__title">Cat Energy <br> SLIM 500 г</h3>
           <dl class="product-card__info-description">
             <dt class="info-description__item-termin">Масса</dt>

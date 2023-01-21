@@ -2,6 +2,7 @@
 
 .inner-nav {
   margin-left: auto;
+  flex-grow: 1;
 
   @media (max-width: @mobile-width-only) {
     &--closed {
@@ -26,6 +27,8 @@
 
   &--nojs {
     display: block;
+    width: 100%;
+    flex-grow: 1;
 
     @media (min-width: @tablet-width) {
       width: auto;
@@ -46,10 +49,15 @@
   }
 }
 
+.inner-nav__wrapper {
+  margin-right: auto;
+}
+
 .inner-nav__list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   padding-left: 0;
 

@@ -15,7 +15,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 18px;
+  padding-bottom: 13px;
 
   @media (max-width: @mobile-width-only) {
     border-bottom: 1px solid #d9d9d9;
@@ -28,11 +28,16 @@
 
 .main-header__logo-title {
   margin-right: auto;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: auto;
+  }
 }
 
 .main-header__toggle {
   width: 24px;
   height: 16px;
+  padding: 20px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -49,6 +54,7 @@
 .main-header__close-toggle {
   width: 24px;
   height: 16px;
+  padding: 20px;
   border: none;
   cursor: pointer;
   background-color: transparent;
