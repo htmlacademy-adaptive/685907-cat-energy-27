@@ -5,15 +5,18 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 77px;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    border: none;
+    padding: 0;
   }
 }
 
 .additional-catalog__i {
-  border-bottom: 1px solid #e6e6e6;
   margin-top: 13px;
   padding-bottom: 20px;
   width: 100%;
@@ -26,12 +29,22 @@
     grid-template-columns: 1fr 1fr 100px;
     grid-template-rows: 1fr 1fr;
     row-gap: 25px;
+    padding-bottom: 26px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 100px 250px;
     grid-template-rows: 1fr;
     column-gap: 40px;
+    padding-bottom: 17px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &:nth-child(n) {
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 

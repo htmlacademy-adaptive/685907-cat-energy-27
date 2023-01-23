@@ -2,10 +2,14 @@
 
 .main__title-wrap {
   padding-top: 27px;
-  padding-bottom: 27px;
+  padding-bottom: 40px;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #ebebeb;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 40px 70px;
+    padding: 40px 35px;
   }
 
   @media (min-width: @desktop-width) {

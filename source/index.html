@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 16×16 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/32.png"> <!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
 <header class="main-header">
   <div class="main-header__wrapper container">
     <a href="index.html" class="main-header__logo">
-      <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="100%" height="100%">
+      </picture>
     </a>
     <a href="index.html" class="main-header__logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
@@ -45,7 +54,11 @@
     <div class="promo__wrapper container">
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img src="img/promo-image.png" width="280" height="270" alt="Питание для кошек Cat Energy со вкусом курицы." class="promo__image">
+      <picture>
+        <source media="(min-width: 1260px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Питание для кошек Cat Energy со вкусом курицы." class="promo__image">
+      </picture>
       <a href="form.html" class="button promo__link">Подобрать программу</a>
     </div>
   </article>
@@ -93,22 +106,44 @@
     </div>
   </section>
   <section class="life-example">
-    <div class="life-example__wrapper container">
-      <h2 class="life-example__title">Живой пример</h2>
-      <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он
-        не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <ul class="life-example__results results">
-        <li class="result__value">
-          <p class="results__number">5 кг</p>
-          <p class="results__description">снижение<br> веса</p>
-        </li>
-        <li class="result__value">
-          <p class="results__number">60 дней</p>
-          <p class="results__description">затрачено<br> времени</p>
-        </li>
-      </ul>
-      <p class="life-example__total-amount">Затраты на питание: <span class="life-example__total-value"><br>15 000 руб.</span></p>
+    <div class="life-example__container container">
+      <div class="life-example__wrapper">
+        <h2 class="life-example__title">Живой пример</h2>
+        <p class="life-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он
+          не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <ul class="life-example__results results">
+          <li class="results__value">
+            <p class="results__number">5 кг</p>
+            <p class="results__description">снижение<br> веса</p>
+          </li>
+          <li class="results__value">
+            <p class="results__number">60 дней</p>
+            <p class="results__description">затрачено<br> времени</p>
+          </li>
+        </ul>
+        <p class="life-example__total-amount">Затраты на питание: <span class="life-example__total-value"><br>15 000 руб.</span></p>
+      </div>
       <div class="life-example__photo-verification">
+        <div class="life-example__photo-verification-before-wrap" style="width: 100%">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/slider/tablet-before-cat-slider@1x.png 1x, img/slider/tablet-before-cat-slider@2x.png 2x">
+            <img src="img/slider/mobile-before-cat-slider@1x.png" srcset="img/slider/mobile-before-cat-slider@2x.png 2x" alt="Картинка кота в состоянии 'до'" class="life-example__photo-verification-before">
+          </picture>
+        </div>
+        <div class="life-example__photo-verification-after-wrap" style="width: 100%">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/slider/tablet-after-cat-slider@1x.png 1x, img/slider/tablet-after-cat-slider@2x.png 2x">
+            <img src="img/slider/mobile-after-cat-slider@1x.png" srcset="img/slider/mobile-after-cat-slider@2x.png 2x" alt="Картинка кота в состоянии 'после'" class="life-example__photo-verification-after">
+          </picture>
+        </div>
+        <div class="life-example__slider-control slider-control" style="left: 50%">
+          <button class="slider-control__button">
+            <svg class="slider-control__button-arrows" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0L0 9L8 18V0Z" fill="#666666"/>
+              <path d="M24 9L16 0V18L24 9Z" fill="#666666"/>
+            </svg>
+          </button>
+        </div>
         <span class="visually-hidden">Фотографии до и после программы.</span>
       </div>
     </div>

@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 16×16 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/32.png"> <!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
 <header class="main-header">
   <div class="main-header__wrapper container">
     <a href="index.html" class="main-header__logo">
-      <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="33" height="38">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy." width="100%" height="100%">
+      </picture>
     </a>
     <a href="index.html" class="main-header__logo-title logo-title">
       <img src="img/logo-text.svg" alt="Название магазина Cat Energy" width="101" height="18">
@@ -94,12 +103,12 @@
             <legend class="program-form__legend">Контактные данные (владельца кота)</legend>
             <ul class="program-form__contacts-list program-contacts">
               <li class="program-contacts__i">
-                <label class="program-contacts__label">E-mail:*</label>
-                <input class="program-contacts__input" type="text" value="kuklachev@gmail.com" name="email" required>
+                <label class="program-contacts__label" for="program-contacts-email">E-mail:*</label>
+                <input class="program-contacts__input program-contacts__input--email-icon" id="program-contacts-email" type="text" value="kuklachev@gmail.com" name="email" required>
               </li>
               <li class="program-contacts__i">
-                <label class="program-contacts__label">Телефон:* </label>
-                <input class="program-contacts__input" type="text" value="8 (960) 900-60-90" name="phone" required>
+                <label class="program-contacts__label" for="program-contacts-phone">Телефон:* </label>
+                <input class="program-contacts__input program-contacts__input--phone-icon" id="program-contacts-phone" type="text" value="8 (960) 900-60-90" name="phone" required>
               </li>
             </ul>
           </fieldset>

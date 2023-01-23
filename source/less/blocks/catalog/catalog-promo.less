@@ -11,13 +11,17 @@
 }
 
 .additional-catalog__promo-image {
-  background-image: url("../../../img/image-inner-promo.png");
+  background-image: url("../../../img/image-inner-promo@1x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/image-inner-promo@2x.png");
+  }
+
   @media (min-width: @desktop-width) {
-    background-size: auto;
+    background-size: cover;
   }
 }
 
