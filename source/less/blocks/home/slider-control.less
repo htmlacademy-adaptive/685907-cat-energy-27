@@ -2,60 +2,13 @@
 
 .slider-control {
   height: 100%;
-  position: relative;
+  position: absolute;
   transform: translateX(-50%);
   width: 40px;
   z-index: 2;
 
   @media (min-width: @tablet-width) {
     height: 515px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 4px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-    height: 50%;
-    background-color: #666666;
-
-    @media (min-width: @tablet-width) {
-      height: 250px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 4px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-    height: 50%;
-    background-color: #666666;
-  }
-
-  &:hover::after,
-  &:hover::before {
-    background-color: @basic_green;
-  }
-
-  &:hover .slider-control__button {
-    border-color: @basic_green;
-  }
-
-  &:hover .slider-control__button-arrows path {
-    fill: @basic_green;
-  }
-
-  &:active {
-    opacity: 60%;
   }
 }
 
@@ -76,7 +29,62 @@
   @media (min-width: @tablet-width) {
     top: 45%;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    top: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    height: 110px;
+    background-color: #666666;
+
+    @media (min-width: @tablet-width) {
+      top: -250px;
+      height: 250px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    height: 120px;
+    background-color: #666666;
+    z-index: 2;
+
+    @media (min-width: @tablet-width) {
+      bottom: -250px;
+      height: 250px;
+    }
+  }
+
+  &:hover {
+    border-color: @basic_green;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @basic_green;
+  }
+
+  &:hover .slider-control__button-arrows path {
+    fill: @basic_green;
+  }
 }
+
 
 .slider-control__button-arrows {
   position: absolute;

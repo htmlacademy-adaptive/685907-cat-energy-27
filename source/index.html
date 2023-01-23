@@ -124,8 +124,18 @@
         <p class="life-example__total-amount">Затраты на питание: <span class="life-example__total-value"><br>15 000 руб.</span></p>
       </div>
       <div class="life-example__photo-verification">
-        <div class="life-example__photo-verification-before"></div>
-        <div class="life-example__photo-verification-after"></div>
+        <div class="life-example__photo-verification-before-wrap" style="width: 100%">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/slider/tablet-before-cat-slider@1x.png 1x, img/slider/tablet-before-cat-slider@2x.png 2x">
+            <img src="img/slider/mobile-before-cat-slider@1x.png" srcset="img/slider/mobile-before-cat-slider@2x.png 2x" alt="Картинка кота в состоянии 'до'" class="life-example__photo-verification-before">
+          </picture>
+        </div>
+        <div class="life-example__photo-verification-after-wrap" style="width: 100%">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/slider/tablet-after-cat-slider@1x.png 1x, img/slider/tablet-after-cat-slider@2x.png 2x">
+            <img src="img/slider/mobile-after-cat-slider@1x.png" srcset="img/slider/mobile-after-cat-slider@2x.png 2x" alt="Картинка кота в состоянии 'после'" class="life-example__photo-verification-after">
+          </picture>
+        </div>
         <div class="life-example__slider-control slider-control" style="left: 50%">
           <button class="slider-control__button">
             <svg class="slider-control__button-arrows" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">

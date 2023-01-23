@@ -70,15 +70,17 @@
 }
 
 .life-example__photo-verification {
-  width: 100%;
+  width: 280px;
   height: 256px;
   margin: 20px auto 40px;
   position: relative;
+  display: flex;
 
   @media (min-width: @tablet-width) {
     margin-top: 99px;
     grid-column: 1/4;
-    height: 462px;
+    height: 512px;
+    width: 560px;
   }
 
   @media (min-width: @desktop-width) {
@@ -173,59 +175,50 @@
 }
 
 .life-example__photo-verification-before {
-  background-image: url("../../../img/slider/mobile-before-cat-slider@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 280px;
+  display: flex;
+  justify-content: flex-start;
   height: 256px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 280px;
   z-index: 1;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../../img/slider/mobile-before-cat-slider@2x.png");
-    background-size: 280px auto;
-  }
-
   @media (min-width: @tablet-width) {
-    background-image: url("../../../img/slider/tablet-before-cat-slider@1x.png");
-    width: 560px;
     height: 512px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/slider/tablet-before-cat-slider@2x.png");
-      background-size: 560px auto;
-    }
+    width: 560px;
   }
 }
 
 .life-example__photo-verification-after {
-  background-image: url("../../../img/slider/mobile-after-cat-slider@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 280px;
+  display: flex;
   height: 256px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 280px;
   z-index: 1;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../../img/slider/mobile-after-cat-slider@2x.png");
-    background-size: 280px auto;
+  @media (min-width: @tablet-width) {
+    height: 512px;
+    width: 560px;
   }
+}
+
+.life-example__photo-verification-before-wrap {
+  height: 256px;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../../img/slider/tablet-after-cat-slider@1x.png");
-    width: 560px;
     height: 512px;
+  }
+}
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/slider/tablet-after-cat-slider@2x.png");
-      background-size: 560px auto;
-    }
+.life-example__photo-verification-after-wrap {
+  height: 256px;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
   }
 }
