@@ -23,28 +23,37 @@
 }
 
 .program-additional__label {
+  position: relative;
   text-transform: uppercase;
-  padding-left: 62px;
+  padding: 10px 10px 10px 62px;
   font-size: 16px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: (30 / 20);
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-image: url("../../../img/checkbox.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.program-additional__input-mark {
-  position: absolute;
-  content: "";
-  background-image: url("../../../img/checkbox.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-}
 
-.program-additional__input[type="checkbox"]:checked + .program-additional__input-mark::before {
+.program-additional__input[type="checkbox"]:checked + .program-additional__label::after {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
   content: "";
   background-image: url("../../../img/check-for-checkbox.svg");
   background-position: center;
