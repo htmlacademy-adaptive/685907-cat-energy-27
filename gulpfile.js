@@ -54,6 +54,15 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
+// WebP
+
+const createWebp = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest('build/img'))
+}
 
 // Copy
 
@@ -112,7 +121,8 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    svg
+    svg,
+    createWebp
   ),
   gulp.series(
     server,
@@ -129,7 +139,8 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
-    svg
+    svg,
+    createWebp
   ),
   gulp.series(
     server,
